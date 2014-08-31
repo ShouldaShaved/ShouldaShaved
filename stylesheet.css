@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	height: 100%;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	background: #eee; /* Fills the page */
+	position: relative; /* Fix for absolute positioning */
+	background-color: #FEFEFE;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#Header {
+	height: 4%;
+	width: 100%;
+	background-color: #333333;
+}
