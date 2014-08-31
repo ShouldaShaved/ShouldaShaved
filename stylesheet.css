@@ -1,5 +1,60 @@
 @charset "UTF-8";
+
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('webfonts/leaguegothic-regular-webfont.eot');
+    src: url('webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('webfonts/leaguegothic-italic-webfont.eot');
+    src: url('webfonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('webfonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('webfonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('webfonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('webfonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
 /* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
 
 body {
 	height: 100%;
@@ -16,7 +71,108 @@ body {
 }
 
 #Header {
-	height: 4%;
+	height: 5.8%;
 	width: 100%;
-	background-color: #333333;
+	background: #575b63; /* Old browsers */
+		background: -moz-linear-gradient(top,  #575b63 0%, #3b4048 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#575b63), color-stop(100%,#3b4048)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #575b63 0%,#3b4048 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575b63', endColorstr='#3b4048',GradientType=0 ); /* IE6-9 */
+}
+
+#Header div {
+	text-align: center;
+}
+
+#ShouldaShaved {
+	height: 100%;
+	width: 10%;
+	background color: #737373;
+	line-height: 2.3;
+
+}
+
+#login {
+	height: 100%;
+	line-height: 2.3;
+	font-size: 24px;
+	letter-spacing: .5px;
+	margin-right: 0;
+	padding-left:14px;
+	padding-right:14px;
+	background: #575b63; /* Old browsers */
+		background: -moz-linear-gradient(top,  #575b63 0%, #3b4048 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#575b63), color-stop(100%,#3b4048)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #575b63 0%,#3b4048 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575b63', endColorstr='#3b4048',GradientType=0 ); /* IE6-9 */
+		border-left: 1px solid rgba(0, 0, 0, 0.498039);
+		border-right: 1px solid rgba(0, 0, 0, 0.498039);
+	font-family: League Gothic, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+}
+
+#login:hover {
+	height: 100%;
+	background: #333333;
+}
+
+#signup {
+	height: 100%;
+	line-height: 2.3;
+	font-size: 24px;
+	letter-spacing: .5px;
+	margin-left: -.2%;
+	margin-right: 24%;
+	padding-left:14px;
+	padding-right:14px;
+	background: #575b63; /* Old browsers */
+		background: -moz-linear-gradient(top,  #575b63 0%, #3b4048 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#575b63), color-stop(100%,#3b4048)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #575b63 0%,#3b4048 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #575b63 0%,#3b4048 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575b63', endColorstr='#3b4048',GradientType=0 ); /* IE6-9 */
+		border-right: 1px solid rgba(0, 0, 0, 0.498039);
+	vertical-align: 25%;
+	font-family: League Gothic, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+}
+
+#signup:hover {
+	height: 100%;
+	background: #333333;
+}
+
+
+#ShouldaShaved span {
+	color: #E9E9E9;
+}
+
+#login span {
+	color: #E9E9E9;
+}
+
+#signup span {
+	color: #E9E9E9;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.decorate {
+	text-decoration: none;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
 }
