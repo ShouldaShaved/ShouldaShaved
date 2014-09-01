@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: 'Latino';
+	src: url('webfonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Regular */
 @font-face {
     font-family: 'League Gothic';
@@ -73,6 +80,7 @@ body {
 #Header {
 	height: 5.8%;
 	width: 100%;
+	position: relative;
 	background: #575b63; /* Old browsers */
 		background: -moz-linear-gradient(top,  #575b63 0%, #3b4048 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#575b63), color-stop(100%,#3b4048)); /* Chrome,Safari4+ */
@@ -87,19 +95,37 @@ body {
 	text-align: center;
 }
 
-#ShouldaShaved {
-	height: 100%;
-	width: 10%;
-	background color: #737373;
-	line-height: 2.3;
-
+#footer {
+	height: 32%;
+	width: 100%;
+	background-color: #1A1A1A;
+	position: absolute;
 }
 
-#login {
+#footer img {
+	height: 60%;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%
+}
+
+#ShouldaShaved {
 	height: 100%;
-	line-height: 2.3;
-	font-size: 24px;
-	letter-spacing: .5px;
+	width: 14%;
+	margin-left: 10%;
+	background color: #737373;
+	font-size: 30;
+	line-height: 1.7;
+	font-family: Latino, League Gothic, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+	text-align: center;
+	position: relative;
+}
+
+#leftmenuitem {
+	height: 100%;
+	line-height: 2.6;
+	font-size: 20px;
 	margin-right: 0;
 	padding-left:14px;
 	padding-right:14px;
@@ -113,20 +139,20 @@ body {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575b63', endColorstr='#3b4048',GradientType=0 ); /* IE6-9 */
 		border-left: 1px solid rgba(0, 0, 0, 0.498039);
 		border-right: 1px solid rgba(0, 0, 0, 0.498039);
-	font-family: League Gothic, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+	font-family: Latino, League Gothic, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+	position: relative;
 }
 
-#login:hover {
+#leftmenuitem:hover {
 	height: 100%;
 	background: #333333;
 }
 
-#signup {
+#rightmenuitem {
 	height: 100%;
-	line-height: 2.3;
-	font-size: 24px;
-	letter-spacing: 2px;
-	margin-left: -.2%;
+	line-height: 2.6;
+	font-size: 20px;
+
 	margin-right: 24%;
 	padding-left:14px;
 	padding-right:14px;
@@ -140,12 +166,44 @@ body {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575b63', endColorstr='#3b4048',GradientType=0 ); /* IE6-9 */
 		border-right: 1px solid rgba(0, 0, 0, 0.498039);
 	vertical-align: 25%;
-	font-family: League Gothic, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+	font-family: Latino, League Gothic, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+	position: relative;
 }
 
-#signup:hover {
+#rightmenuitem:hover {
 	height: 100%;
 	background: #333333;
+}
+
+#Crop {
+	width: 100%;
+	height: 59.48%;
+	overflow: hidden;
+}
+
+#Crop img {
+	margin-top: -11%;
+}
+
+#SoundCrop {
+	height:60%;
+	width: 12%;
+	overflow:hidden;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	position:absolute;
+	margin-bottom: -3.419%;
+	bottom: 0px;
+	margin-left: 88%
+}
+
+#Content {
+
+}
+
+#Content {
+
 }
 
 
@@ -153,11 +211,11 @@ body {
 	color: #E9E9E9;
 }
 
-#login span {
+#leftmenuitem span {
 	color: #E9E9E9;
 }
 
-#signup span {
+#rightmenuitem span {
 	color: #E9E9E9;
 }
 
@@ -175,4 +233,8 @@ body {
 
 .right {
 	float:right;
+}
+
+.bottom {
+	bottom:0px;
 }
